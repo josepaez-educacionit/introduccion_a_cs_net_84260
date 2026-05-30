@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/m1/" />
+  <Folder Name="/m2/" />
+  <Folder Name="/m3/">
+    <Project Path="m3/Arreglos/Arreglos.csproj" />
+  </Folder>
+  <Folder Name="/m4/">
+    <Project Path="m4/FuncionesProcedimientos/FuncionesProcedimientos.csproj" />
+  </Folder>
+  <Folder Name="/m5/" />
+</Solution>
