@@ -61,6 +61,22 @@
                 Console.WriteLine(); // Salto de línea al terminar cada fila
             }
 
+            // =============================
+            // BÚSQUEDA DEL MAYOR VALOR
+            // =============================
+            // Se recorre toda la matriz para encontrar el valor máximo.
+            int mayor = matriz2[0, 0]; // Se parte del primer elemento
+            for (int i = 0; i < matriz2.GetLength(0); i++)
+            {
+                for (int j = 0; j < matriz2.GetLength(1); j++)
+                {
+                    if (matriz2[i, j] > mayor)
+                    {
+                        mayor = matriz2[i, j]; // Se actualiza si se encuentra uno mayor
+                    }
+                }
+            }
+            Console.WriteLine("El mayor valor es: " + mayor); // Muestra el resultado
         }
     }
 }
