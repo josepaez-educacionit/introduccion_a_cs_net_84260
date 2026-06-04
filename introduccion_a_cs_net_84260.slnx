@@ -5,6 +5,7 @@
     <Project Path="m3/Arreglos/Arreglos.csproj" />
   </Folder>
   <Folder Name="/m4/">
+    <Project Path="m4/Arreglos_Multidimensionales/Arreglos_Multidimensionales.csproj" Id="07e9bf43-15c8-4106-bdbe-722e51aab99d" />
     <Project Path="m4/FuncionesProcedimientos/FuncionesProcedimientos.csproj" />
   </Folder>
   <Folder Name="/m5/" />
