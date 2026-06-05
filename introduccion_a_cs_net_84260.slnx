@@ -8,5 +8,8 @@
     <Project Path="m4/Arreglos_Multidimensionales/Arreglos_Multidimensionales.csproj" Id="07e9bf43-15c8-4106-bdbe-722e51aab99d" />
     <Project Path="m4/FuncionesProcedimientos/FuncionesProcedimientos.csproj" />
   </Folder>
-  <Folder Name="/m5/" />
+  <Folder Name="/m5/">
+    <Project Path="Enumeraciones/Enumeraciones.csproj" Id="bd6f68bb-bf66-4d22-9fdf-3f8010d269c2" />
+    <Project Path="m5/Estructuras/Estructuras.csproj" Id="5b9c4e89-3a72-4ff3-a8e2-7571029feee7" />
+  </Folder>
 </Solution>
