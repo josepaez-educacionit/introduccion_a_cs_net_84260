@@ -64,7 +64,7 @@ namespace Enumeraciones
         {
             // Ejemplo: Uso de la estructura Persona con enumeración TipoDocumento
             Persona unaPersona = new Persona();
-            unaPersona.TipoDocumento = TipoDocumento.DNI;
+            unaPersona.TipoDocumento = TipoDocumento.Pasaporte;
             Console.WriteLine("Datos de Tipo de Documento");
 
             // Ejemplo: Declaración y asignación de variables de tipo enum TipoCuenta
@@ -83,7 +83,4 @@ namespace Enumeraciones
             Console.WriteLine($"El estado del pedido es: {estado}");
         }
     }
-
-
-
 }
