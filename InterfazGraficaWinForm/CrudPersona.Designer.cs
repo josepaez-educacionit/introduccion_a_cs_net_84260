@@ -43,6 +43,13 @@
             btnMostrarDatos = new Button();
             btnGuardar = new Button();
             btnLimpiar = new Button();
+            dgvPersonas = new DataGridView();
+            btnNuevo = new Button();
+            btnEditar = new Button();
+            btnEliminar = new Button();
+            btnCancelar = new Button();
+            btnCerrar = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvPersonas).BeginInit();
             SuspendLayout();
             // 
             // lblNombre
@@ -143,7 +150,7 @@
             // 
             // btnMostrarDatos
             // 
-            btnMostrarDatos.Location = new Point(108, 288);
+            btnMostrarDatos.Location = new Point(713, 23);
             btnMostrarDatos.Name = "btnMostrarDatos";
             btnMostrarDatos.Size = new Size(75, 23);
             btnMostrarDatos.TabIndex = 12;
@@ -153,7 +160,7 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(200, 288);
+            btnGuardar.Location = new Point(255, 404);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(75, 23);
             btnGuardar.TabIndex = 13;
@@ -163,7 +170,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(307, 288);
+            btnLimpiar.Location = new Point(713, 67);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(75, 23);
             btnLimpiar.TabIndex = 14;
@@ -171,11 +178,74 @@
             btnLimpiar.UseVisualStyleBackColor = true;
             btnLimpiar.Click += btnLimpiar_Click;
             // 
+            // dgvPersonas
+            // 
+            dgvPersonas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvPersonas.Location = new Point(64, 197);
+            dgvPersonas.Name = "dgvPersonas";
+            dgvPersonas.Size = new Size(684, 150);
+            dgvPersonas.TabIndex = 15;
+            // 
+            // btnNuevo
+            // 
+            btnNuevo.Location = new Point(104, 353);
+            btnNuevo.Name = "btnNuevo";
+            btnNuevo.Size = new Size(75, 23);
+            btnNuevo.TabIndex = 16;
+            btnNuevo.Text = "Nuevo";
+            btnNuevo.UseVisualStyleBackColor = true;
+            btnNuevo.Click += btnNuevo_Click;
+            // 
+            // btnEditar
+            // 
+            btnEditar.Location = new Point(185, 353);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(75, 23);
+            btnEditar.TabIndex = 17;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.Location = new Point(276, 353);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(75, 23);
+            btnEliminar.TabIndex = 18;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(346, 404);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(75, 23);
+            btnCancelar.TabIndex = 19;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnCerrar
+            // 
+            btnCerrar.Location = new Point(713, 109);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(75, 23);
+            btnCerrar.TabIndex = 20;
+            btnCerrar.Text = "Cerrar";
+            btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Click += btnCerrar_Click;
+            // 
             // CrudPersona
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnCerrar);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnEliminar);
+            Controls.Add(btnEditar);
+            Controls.Add(btnNuevo);
+            Controls.Add(dgvPersonas);
             Controls.Add(btnLimpiar);
             Controls.Add(btnGuardar);
             Controls.Add(btnMostrarDatos);
@@ -193,6 +263,8 @@
             Controls.Add(lblNombre);
             Name = "CrudPersona";
             Text = "CrudPersona";
+            Load += CrudPersona_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvPersonas).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -214,5 +286,11 @@
         private Button btnMostrarDatos;
         private Button btnGuardar;
         private Button btnLimpiar;
+        private DataGridView dgvPersonas;
+        private Button btnNuevo;
+        private Button btnEditar;
+        private Button btnEliminar;
+        private Button btnCancelar;
+        private Button btnCerrar;
     }
 }
