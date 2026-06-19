@@ -1,0 +1,38 @@
+﻿@model InterfazGraficaMVC.Models.Persona
+
+@{
+    ViewData["Title"] = "Detalles de persona";
+}
+
+<h1>Detalles de persona</h1>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Nombre @Model.Apellido</h5>
+
+        <p class="card-text">
+            <strong>Id:</strong> @Model.Id
+        </p>
+
+        <p class="card-text">
+            <strong>Nombre:</strong> @Model.Nombre
+        </p>
+
+        <p class="card-text">
+            <strong>Apellido:</strong> @Model.Apellido
+        </p>
+
+        <p class="card-text">
+            <strong>Edad:</strong> @Model.Edad
+        </p>
+
+        <p class="card-text">
+            <strong>Email:</strong> @Model.Email
+        </p>
+    </div>
+</div>
+
+<br />
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+<a asp-action="Index" class="btn btn-secondary">Volver al listado</a>

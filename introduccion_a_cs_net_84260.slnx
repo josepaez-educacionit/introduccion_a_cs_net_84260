@@ -10,8 +10,10 @@
   </Folder>
   <Folder Name="/m5/">
     <Project Path="Enumeraciones/Enumeraciones.csproj" Id="bd6f68bb-bf66-4d22-9fdf-3f8010d269c2" />
+    <Project Path="InterfazGraficaMVC/InterfazGraficaMVC.csproj" Id="c4a2af95-9d65-43ee-a563-9790517268e3" />
     <Project Path="InterfazGraficaWinForm/InterfazGraficaWinForm.csproj" Id="654b6ea6-60a9-4140-8d5b-8aeec56d0bb7" />
     <Project Path="m5/Estructuras/Estructuras.csproj" Id="5b9c4e89-3a72-4ff3-a8e2-7571029feee7" />
     <Project Path="poo/poo.csproj" Id="1270d4bc-e3dd-4af8-a2f9-a0e435530839" />
   </Folder>
+  <Project Path="InterfazGraficaMVC_SQL/InterfazGraficaMVC_SQL.csproj" Id="fba3636e-9b6e-4d8d-a494-79199b89e452" />
 </Solution>

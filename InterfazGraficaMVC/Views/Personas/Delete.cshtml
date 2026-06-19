@@ -1,0 +1,38 @@
+﻿@model InterfazGraficaMVC.Models.Persona
+
+@{
+    ViewData["Title"] = "Eliminar persona";
+}
+
+<h1>Eliminar persona</h1>
+
+<div class="alert alert-warning">
+    ¿Está seguro de que desea eliminar esta persona?
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Nombre @Model.Apellido</h5>
+
+        <p class="card-text">
+            <strong>Id:</strong> @Model.Id
+        </p>
+
+        <p class="card-text">
+            <strong>Edad:</strong> @Model.Edad
+        </p>
+
+        <p class="card-text">
+            <strong>Email:</strong> @Model.Email
+        </p>
+    </div>
+</div>
+
+<br />
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
