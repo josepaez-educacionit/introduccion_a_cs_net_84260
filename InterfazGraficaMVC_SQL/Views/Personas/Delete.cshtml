@@ -1,0 +1,41 @@
+@model InterfazGraficaMVC_SQL.Entities.Persona
+
+@{
+    ViewData["Title"] = "Eliminar persona";
+}
+
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+    <div>
+        <h1 class="mb-1">Eliminar persona</h1>
+        <p class="text-muted mb-0">Confirme la eliminación del registro seleccionado.</p>
+    </div>
+    <a asp-action="Index" class="btn btn-outline-secondary" title="Volver al listado de personas">Volver al listado</a>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body p-4">
+        <div class="alert alert-warning" role="alert">
+            ¿Está seguro de que desea eliminar esta persona? Esta acción no se puede deshacer.
+        </div>
+
+        <dl class="row mb-4">
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Nombre)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Nombre)</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Apellido)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Apellido)</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Edad)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Edad)</dd>
+
+            <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Email)</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
+        </dl>
+
+        <form asp-action="Delete" class="d-flex gap-2">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-danger" title="Confirmar eliminación">Eliminar persona</button>
+            <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
+        </form>
+    </div>
+</div>

@@ -1,3 +1,5 @@
+using InterfazGraficaMVC_SQL.Entities;
+using Microsoft.EntityFrameworkCore;
 namespace InterfazGraficaMVC_SQL
 {
     public class Program
@@ -5,6 +7,9 @@ namespace InterfazGraficaMVC_SQL
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            var connectionString = builder.Configuration.GetConnectionString("DemoNET_84260Context") ?? throw new InvalidOperationException("Connection string 'DemoNET_84260Context' not found.");
+
+            builder.Services.AddDbContext<DemoNET_84260Context>(options => options.UseSqlServer(connectionString));
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
